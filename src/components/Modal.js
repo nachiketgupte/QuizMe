@@ -1,4 +1,5 @@
-import React from 'react';
+import React from "react";
+import { Link } from "react-router-dom";
 
 const Modal = ({ isOpen, closeModal }) => {
   if (!isOpen) return null; // Don't render anything if modal is closed
@@ -9,14 +10,30 @@ const Modal = ({ isOpen, closeModal }) => {
         <h2 className="text-2xl font-bold mb-4">Login</h2>
         <form>
           <div className="mb-4">
-            <label htmlFor="username" className="block text-sm">Username</label>
-            <input type="text" id="username" className="border w-full px-4 py-2 rounded" />
+            <label htmlFor="username" className="block text-sm">
+              Username
+            </label>
+            <input
+              type="text"
+              id="username"
+              className="border w-full px-4 py-2 rounded"
+            />
           </div>
           <div className="mb-4">
-            <label htmlFor="password" className="block text-sm">Password</label>
-            <input type="password" id="password" className="border w-full px-4 py-2 rounded" />
+            <label htmlFor="password" className="block text-sm">
+              Password
+            </label>
+            <input
+              type="password"
+              id="password"
+              className="border w-full px-4 py-2 rounded"
+            />
           </div>
-          <div className="flex justify-end">
+          <div className="flex">
+            <div>
+              Don't have an account?
+              <a className="hover:underline text-blue-600" href="/signup">Sign Up</a>
+            </div>
             <button
               type="button"
               onClick={closeModal}
@@ -24,7 +41,10 @@ const Modal = ({ isOpen, closeModal }) => {
             >
               Close
             </button>
-            <button type="submit" className="ml-2 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-800">
+            <button
+              type="submit"
+              className="ml-2 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-800"
+            >
               Login
             </button>
           </div>

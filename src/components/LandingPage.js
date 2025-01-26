@@ -52,7 +52,7 @@ const LandingPage = () => {
       {/* Features Section */}
       <section id="features" className="py-20 bg-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-gray-800">Features</h2>
+          <h2 className="text-3xl font-bold text-white">Features</h2>
           <div className="mt-8 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             <div className="p-6 bg-white rounded-lg shadow">
               <h3 className="text-xl font-semibold text-red-500">Room-Based Multiplayer</h3>

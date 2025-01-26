@@ -1,10 +1,13 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import LandingPage from './components/LandingPage';
+import SignUpPage from './components/SignUpPage';
 
 function App() {
   return (
-    <div className="min-h-screen bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-white">
-      <LandingPage />
-    </div>
+      <Routes>
+        <Route path='/' element={<LandingPage />}/>
+        <Route path='/signup' element = {<SignUpPage />} />
+      </Routes>
   );
 }
 
