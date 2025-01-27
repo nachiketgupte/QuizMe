@@ -21,3 +21,6 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+#quiz-backend
+quiz-app\quiz-backend\node_modules
