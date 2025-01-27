@@ -17,4 +17,4 @@ COPY . .
 EXPOSE 5000
 
 # Run the backend server
-CMD ["nodemon", "server.js"]
+CMD ["node", "server.js"]
