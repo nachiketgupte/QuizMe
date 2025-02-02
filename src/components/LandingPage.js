@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Modal from "./Modal";
+// import Modal from "./Modal";
 
 const LandingPage = () => {
 
@@ -22,9 +22,9 @@ const LandingPage = () => {
               How It Works
             </a>
 
-            <button onClick={openModal} className='text-gray-600 hover:text-red-500'>
+            <a href="\login" className='text-gray-600 hover:text-red-500'>
               Login
-            </button>
+            </a>
           </nav>
         </div>
       </header>
@@ -40,7 +40,7 @@ const LandingPage = () => {
           </p>
           <div className="mt-6">
             <a
-              href="#signup"
+              href="\signup"
               className="bg-white text-red-500 px-6 py-3 rounded-lg font-semibold shadow hover:bg-gray-100"
             >
               Get Started
@@ -96,8 +96,6 @@ const LandingPage = () => {
           </div>
         </div>
       </section>
-
-      <Modal isOpen={isModalOpen} closeModal={closeModal} />
 
       {/* Footer */}
       <footer className="bg-gray-800 text-gray-400 py-6">

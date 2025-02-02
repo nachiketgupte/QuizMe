@@ -58,7 +58,7 @@ const SignUpPage = () => {
 
         // Redirect to the game page after animation
         setTimeout(() => {
-          navigate("/game"); // Change this to your actual game page route
+          navigate("/login"); // Change this to your actual game page route
         }, 3000);
       } else {
         setMessage("Something went wrong. Please try again.");
