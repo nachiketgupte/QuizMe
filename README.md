@@ -3,11 +3,10 @@
 This is the frontend for the Quiz Game application, built using **React** with **Tailwind CSS** for styling. The frontend allows users to sign up, log in, and interact with the game interface.
 
 ## Features
-- User authentication (Sign Up, Log In)
-- Form validation with error messages
+- User authentication (Sign Up, Log In): Uses express-validator to sanitize all user input.
+- Request rate limitter: Adds a limit of 5 login requests per 15 minutes on each IP to prevent brute-force attacks.
 - Show/Hide password functionality
 - API integration for user registration
-- Success animation after account creation
 - Auto-redirect to the game page after successful registration
 
 ## Technologies Used
